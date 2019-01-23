@@ -11,15 +11,10 @@ Jenkins conf (EF team)
 virtualenv -p python2 /var/lib/jenkins/jobs/JobPythonTests/workspace/pyping
 cd /var/lib/jenkins/jobs/JobPythonTests/workspace/pyping ; . bin/activate
 pip install pytest pytest-cov mock
-
 cd /var/lib/jenkins/jobs/JobPythonTests/workspace
 export PYTHONPATH=/var/lib/jenkins/jobs/JobPythonTests/workspace
-
 py.test --junitxml results.xml tests
 ```
-
-
-
 
 
 ===================
