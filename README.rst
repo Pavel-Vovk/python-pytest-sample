@@ -6,7 +6,7 @@ Jenkins conf (EF team)
     #. switch to "jenkis" user
     #. install virtualenv: sudo apt-get install virtualenv
     #. add commands in Build, "execute shell" (for the project: "JobPythonTests"): 
-    
+```    
 $ virtualenv -p python2 /var/lib/jenkins/jobs/JobPythonTests/workspace/pyping
 
 $ cd /var/lib/jenkins/jobs/JobPythonTests/workspace/pyping ; . bin/activate
@@ -18,7 +18,7 @@ $ cd /var/lib/jenkins/jobs/JobPythonTests/workspace
 $ export PYTHONPATH=/var/lib/jenkins/jobs/JobPythonTests/workspace
 
 $ py.test --junitxml results.xml tests
-
+````
 
 pragmatic pytesting
 ===================
