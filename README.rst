@@ -1,4 +1,3 @@
-
 ===================
 Jenkins conf (EF team)
 ===================
@@ -6,7 +5,7 @@ Jenkins conf (EF team)
 #. switch to "jenkis" user
 #. install virtualenv: sudo apt-get install virtualenv
 #. add commands in Build, "execute shell" (for the project: "JobPythonTests"): 
-```
+```shell
 virtualenv -p python2 /var/lib/jenkins/jobs/JobPythonTests/workspace/pyping
 cd /var/lib/jenkins/jobs/JobPythonTests/workspace/pyping ; . bin/activate
 pip install pytest pytest-cov mock
